@@ -10,7 +10,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    -webkit-transform: all .2s linear;
+   transform: all .2s linear;
     transition: all .2s linear;
 }
 
@@ -610,60 +610,94 @@ section{
     padding: 1rem 0;
 }
 
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .links{
+    display: block;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
+
+.footer .box-container .links i {
+    padding-right: 1rem;
+}
+
+
+.footer .box-container .links:hover {
+    color: #f00;
+}
   
+.footer .box-container .links:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p i{
+    color: #f00;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .share{
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #111;
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: #f00;
+}
+
+.footer .box-container .box form .email{
+    margin-bottom: 1rem;
+    width: 100%;
+    background: #111;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.credit{
+    text-align: center;
+    color: #fff;
+    background: #111;
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+
+.credit span{
+    color: #f00;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* reponsive  */
 @media (max-width: 991px) {
     html {
         font-size: 55%;
